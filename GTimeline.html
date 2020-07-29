@@ -136,10 +136,10 @@ d3.sparql(yagoUrl, starQuery).then(function(data) {
 		</script>
 	</head>
 	<body>
-		<h3>Insert a resource name to start browsing timelines:</h3>
+		<h3>Insert a resource name (e.g. "Albert_Einstein" or "European_Union" or "India") to start exploring timelines:</h3>
 		<input type="text" id="text" />
 		<input type="button" id="btn" value="Submit" onClick="javascript: window.open('http://fabriziorlandi.net/sparql-epoch/GTimeline.html?subj=http://yago-knowledge.org/resource/' + document.getElementById('text').value, '_self');" />
-		<p>Or click on the items in the timeline below...</p>
-		<div id="chart_div" style="overflow-x: hidden; overflow-y: scroll; height: 700px; "></div>
+		<p>Or click on the items in the timeline below:</p>
+		<div id="chart_div" style="overflow-x: hidden; overflow-y: scroll; height: 800px; "></div>
 	</body>
 </html>
