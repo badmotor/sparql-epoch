@@ -140,6 +140,6 @@ d3.sparql(yagoUrl, starQuery).then(function(data) {
 		<input type="text" id="text" />
 		<input type="button" id="btn" value="Submit" onClick="javascript: window.open('http://fabriziorlandi.net/sparql-epoch/GTimeline.html?subj=http://yago-knowledge.org/resource/' + document.getElementById('text').value, '_self');" />
 		<p>Or click on the items in the timeline below...</p>
-		<div id="chart_div" style="overflow-x: scroll; overflow-y: scroll; width: 1000px; height: 800px; "></div>
+		<div id="chart_div" style="overflow-x: hidden; overflow-y: scroll; height: 800px; "></div>
 	</body>
 </html>
