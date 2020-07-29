@@ -2,7 +2,6 @@
 	<head>
 		<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 		<script src="https://cdn.jsdelivr.net/npm/d3-sparql@2.0.0/build/d3-sparql.min.js"></script>
-  		<!--script src="https://cdn.jsdelivr.net/npm/d3-timeline-chart@1.3.0/dist/timeline-chart.min.js"></script-->
   		<script src="https://d3js.org/d3.v5.min.js"></script>
   		<script src="https://d3js.org/d3-collection.v1.min.js"></script>
   		<script src="https://d3js.org/d3-dispatch.v1.min.js"></script>
@@ -10,6 +9,8 @@
 		
 		<script type="text/javascript">
 
+	//using a CORS proxy https://cors-anywhere.herokuapp.com/ to avoid issue with cors and Yago server 
+	//need to find a better solution
 	var yagoUrl = 'https://cors-anywhere.herokuapp.com/https://yago-knowledge.org/sparql/query';
 	//var wikidataUrl = 'https://query.wikidata.org/bigdata/namespace/wdq/sparql'
 
