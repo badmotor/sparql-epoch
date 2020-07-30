@@ -109,6 +109,11 @@ d3.sparql(yagoUrl, starQuery).then(function(data) {
 	    	]);
 	    });
 
+		// sort startDate column
+    	data2.sort({
+      		column: 2,
+      		desc: false
+    	});
 
 	    console.log(data2);
 	       
