@@ -109,21 +109,6 @@ d3.sparql(yagoUrl, starQuery).then(function(data) {
 	    	]);
 	    });
 
-	    function compareDates(a, b) {
-  			// Use toUpperCase() to ignore character casing
-  			const dateA = a[2].getTime();
-  			const dateB = b[2].getTime();
-
-  			let comparison = 0;
-  			if (dateA > dateB) {
-			    comparison = 1;
-  			} else if (dateA < dateB) {
-    			comparison = -1;
-  			}
-  			return comparison;
-		}
-
-		data2.sort(compareDates);
 
 	    console.log(data2);
 	       
