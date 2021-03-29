@@ -50,7 +50,7 @@
 		LIMIT 50
 	`;
 
-d3.sparql(yagoUrl, datesQuery).then(function(data) {
+d3.sparql(wikidataUrl, datesQuery).then(function(data) {
 
 
 	google.charts.load('current', {'packages':['timeline']});
@@ -92,7 +92,7 @@ d3.sparql(yagoUrl, datesQuery).then(function(data) {
 		}
 		LIMIT 100`;
 
-d3.sparql(yagoUrl, starQuery).then(function(data) {
+d3.sparql(wikidataUrl, starQuery).then(function(data) {
     
 	console.log(data);
 	////////////////////////////
