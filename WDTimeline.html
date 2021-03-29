@@ -80,7 +80,7 @@ d3.sparql(wikidataUrl, datesQuery).then(function(data) {
   			<`+subject+`> ?pred ?statement.
   			?statement ?predPS ?obj;
     			pq:P580 ?start.
-  			OPTIONAL { ?statement pq:P582 ?end. }
+  			OPTIONAL { ?statement pq:P582 ?end. FILTER(?end >= ?start).}
   			FILTER(STRSTARTS(STR(?predPS), "http://www.wikidata.org/prop/statement/"))
   			FILTER(STRSTARTS(STR(?pred), "http://www.wikidata.org/prop/"))
   			FILTER(STRSTARTS(STR(?statement), "http://www.wikidata.org/entity/statement/"))
