@@ -47,7 +47,7 @@
     			rdfs:label ?pName.
   			FILTER((LANG(?pName)) = "en")
 		}
-		LIMIT 50
+		LIMIT 200
 	`;
 
 d3.sparql(wikidataUrl, datesQuery).then(function(data) {
@@ -90,7 +90,7 @@ d3.sparql(wikidataUrl, datesQuery).then(function(data) {
   			?obj rdfs:label ?oName.
   			FILTER((LANG(?oName)) = "en")
 		}
-		LIMIT 100`;
+		LIMIT 200`;
 
 d3.sparql(wikidataUrl, starQuery).then(function(data) {
     
@@ -146,7 +146,7 @@ d3.sparql(wikidataUrl, starQuery).then(function(data) {
 		</script>
 	</head>
 	<body>
-		<h3>Insert a Wikidata ID for an entity (e.g. Q937 (Albert Einstein), Q458 (European_Union) or Q668 (India")) to start exploring timelines:</h3>
+		<h3>Insert a Wikidata ID for an entity (e.g. Q937 (Albert Einstein), Q458 (European_Union), Q668 (India), Q1299 (The Beatles), etc.) to start exploring timelines:</h3>
 		<input type="text" id="text" />
 		<input type="button" id="btn" value="Submit" onClick="javascript: window.open('http://fabriziorlandi.net/sparql-epoch/WDTimeline.html?subj=http://www.wikidata.org/entity/' + document.getElementById('text').value, '_self');" />
 		<p>Or click on the items in the timeline below:</p>
